@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nickers Server Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/express.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>KNICKERS</h1>
+            <h1>Express Lunch Menu Quiz</h1>
+            <p>Test your knowledge in <strong>Menu fundamentals</strong></p>
+            <img src="images/missin_logo.PNG" alt="">
+        </header>
+        <section>
+            <form name="quizForm" onsubmit="return submitAnswers()">
+                <h3>1. The Clubhouse Wrap comes with Swiss, Cheddar, Mayonnaise, Tomato and Greens in a Spinach wrap with what deli meats inside?</h3>
+                <input type="radio" name="q1" value="a" id="q1a">a. Salami,Bacon<br>
+                <input type="radio" name="q1" value="b" id="q1b">b. Salami, pepperoni<br>
+                <input type="radio" name="q1" value="c" id="q1c">c. Ham, Turkey, Bacon<br>
+                <input type="radio" name="q1" value="d" id="q1d">d. Ham and Bacon<br>
+
+                <h3>2. The cost of a Deli Sandwiches is?</h3>
+                <input type="radio" name="q2" value="a" id="q2a">a. $10<br>
+                <input type="radio" name="q2" value="b" id="q2b">b. $9<br>
+                <input type="radio" name="q2" value="c" id="q2c">c. $8<br>
+                <input type="radio" name="q2" value="d" id="q2d">d. $7<br>
+
+                <h3>3. True or False: Express Lunch menu includes Hotdogs Served with chips and price is $7 ?</h3>
+                <input type="radio" name="q3" value="a" id="q3a">a. True<br>
+                <input type="radio" name="q3" value="b" id="q3b">b. False, not on Express Menu menu<br>
+
+                <h3>4. True or False: Express Lunch menu is served daily between 4pm and 5pm?</h3>
+                <input type="radio" name="q4" value="a" id="q4a">a. True<br>
+                <input type="radio" name="q4" value="b" id="q4b">b. False<br>
+
+                <h3>5. Price of chicken Salad Sandwitch is?</h3>
+                <input type="radio" name="q5" value="a" id="q5a">a. $7<br>
+                <input type="radio" name="q5" value="b" id="q5b">b. $10<br>
+                <input type="radio" name="q5" value="c" id="q5c">c. $12<br>
+                <input type="radio" name="q5" value="d" id="q5d">d. $9<br>
+
+                <h3>6. Nickers Chili is also availble during Express Hours</h3>
+                <input type="radio" name="q6" value="a" id="q6a">a. True<br>
+                <input type="radio" name="q6" value="b" id="q6b">b. False<br>
+                <br><br>
+                <input type="submit" value="Submit Answers">
+            </form>
+        </section>
+        <footer id="results">
+            <!--<p>Copyright &copy; 2018, Robert H.</p>-->
+        </footer>
+    </div>
+</body>
+
+</html>

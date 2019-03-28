@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+
+/* First we are just defining some global styling using the body element -- font, and line height */
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    line-height: 1.5;
+}
+
+
+/* We are turning off underlining for links */
+
+a {
+    text-decoration: none;
+}
+
+
+/* We are indenting paragraphs so paragraph text doesn't bump into other elements */
+
+p {
+    margin-left: 5px;
+}
+
+
+/* We are adding a bit of spacing around images */
+
+img {
+    margin: 5px;
+}
+
+
+/* Now we begin defining the columns that will display in full-sized browser windows */
+
+article {
+    width: 960px;
+    background-color: lavender;
+    color: brown;
+    min-height: 600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+section {
+    padding: 1%;
+    margin: 1%;
+    min-height: 500px;
+    float: left;
+}
+
+#a img {
+    float: left;
+}
+
+#a {
+    width: 44%;
+    background-color: green;
+    color: white;
+}
+
+#b {
+    width: 22%;
+    background-color: white;
+    color: darkgreen;
+}
+
+#c {
+    width: 22%;
+    background-color: white;
+}
+
+header {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 50px;
+    color: green;
+}
+
+@media (min-width:481px) and (max-width:959px) {
+    article {
+        position: relative;
+        height: 1000px;
+        /*We are defining a height of 1000px*/
+        width: 95%;
+        /*We are changing the width from a pixel value to a relative value to resize in different tablets*/
+    }
+    section {
+        min-height: 320px;
+        /*We are reducing the minimum height*/
+    }
+    section img {
+        float: left;
+        /*We are floating images in sections for a more compact tablet design*/
+        padding: 10px;
+    }
+    #a {
+        float: none;
+        /*We are removing the float*/
+        width: 94%;
+        /*We are defining the width with a relative value */
+    }
+    #b {
+        background-color: yellow;
+        /*We are changing the background color of column b to yellow for tablet viewports*/
+        float: left;
+        width: 45%;
+        /*We are sizing the width to be about half the width of section a*/
+    }
+    #c {
+        float: left;
+        width: 45%;
+        /*We are sizing the width to be about half the width of section a*/
+    }
+}
+
+@media (max-width:480px) {
+    article {
+        width: 100%;
+        /*We are allowing the device to define the width -- the <article> will fill the entire width of the device*/
+        margin: 0px;
+        padding: 0px;
+    }
+    section {
+        min-height: 300px;
+        /*We are removing constraints on width and reducing minimum height*/
+    }
+    section img {
+        float: left;
+        /*We are floating images in sections for a more compact smartphone design*/
+        padding: 10px;
+    }
+    #a {
+        float: none;
+        /*We are removing the float*/
+        width: 95%;
+        /*We are defining the width with a relative value*/
+    }
+    #b {
+        float: none;
+        /*We are removing the float*/
+        width: 95%;
+        /*We are defining the width with a relative value*/
+    }
+    #c {
+        float: none;
+        /*We are removing the float*/
+        width: 95%;
+        /*We are defining the width with a relative value*/
+    }
+}

@@ -1,0 +1,80 @@
+Lesson 4
+--------
+L04code01.txt - admin.php
+L04code02.txt - login.php
+L04code03.txt - adminnav.inc.php
+L04code04.txt - adminlogin.html
+L04code05.txt - validate.php
+L04code06.txt - adminmain.inc.php
+L04code07.txt - adminstatus.inc.php
+L04code08.txt - logout.php
+L04code09.txt - mystyle.css
+L04code10.txt - header.inc.php
+L04code11.txt - footer.inc.php
+
+Lesson 5
+--------
+L05code01.txt - newcat.inc.php
+L05code02.txt - addcat.inc.php
+L05code03.txt - newproduct.inc.php
+L05code04.txt - addproduct.inc.php
+L05code05.txt - getThumb.php
+
+
+Lesson 6
+--------
+L06code01.txt - showimage.php
+L06code02.txt - imagetest.php (not part of the application)
+L06code03.txt - editproducts.inc.php
+L06code04.txt - showproducts.php
+L06code05.txt - updateproduct.inc.php
+L06code06.txt - changeproduct.inc.php
+
+Lesson 7
+--------
+L07code01.txt - index.php
+L07code02.txt - nav.inc.php
+L07code03.txt - main.inc.php
+L07code04.txt - cart.inc.php
+
+Lesson 8
+--------
+L08code01.txt - buyproducts.inc.php
+L08code02.txt - updatecart.inc.php
+L08code03.txt - addtocart.inc.php
+L08code04.txt - reviewcart.inc.php
+L08code05.txt - updateitem.inc.php
+L08code06.txt - changeitem.inc.php
+
+Lesson 9
+--------
+L09code01.txt - checkout.inc.php
+L09code02.txt - verifycust.php
+L09code03.txt - confirmorder.inc.php
+L09code04.txt - newcust.inc.php
+L09code05.txt - addcust.php
+
+Lesson 10
+---------
+L10code01.txt - finishorder.inc.php
+L10code02.txt - outofstock.inc.php (not in lesson)
+
+Lesson 11
+---------
+L11code01.txt - search.inc.php
+L11code02.txt - process.inc.php
+L11code03.txt - shiporder.inc.php
+L11code04.txt - postorder.inc.php
+L11code05.txt - report.inc.php
+L11code06.txt - displayreport.inc.php
+
+Lesson 12
+---------
+L12code01.txt - example1.php
+L12code02.txt -example2.php
+L12code03.txt - Product.inc.php
+L12code04.txt - example3.php
+L12code05.txt - example4.php
+L12code06.txt - ProductDatabase.inc.php
+L12code07.txt - example5.php
+

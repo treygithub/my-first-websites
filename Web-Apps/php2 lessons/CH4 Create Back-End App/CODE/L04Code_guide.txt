@@ -1,0 +1,15 @@
+Lesson 4
+--------
+L04code01.txt - admin.php
+L04code02.txt - login.php
+L04code03.txt - adminnav.inc.php
+L04code04.txt - adminlogin.html
+L04code05.txt - validate.php
+L04code06.txt - adminmain.inc.php
+L04code07.txt - adminstatus.inc.php
+L04code08.txt - logout.php
+L04code09.txt - mystyle.css
+L04code10.txt - header.inc.php
+L04code11.txt - footer.inc.php
+
+

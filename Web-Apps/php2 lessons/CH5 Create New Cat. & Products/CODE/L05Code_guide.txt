@@ -1,0 +1,9 @@
+
+Lesson 5
+--------
+L05code01.txt - newcat.inc.php
+L05code02.txt - addcat.inc.php
+L05code03.txt - newproduct.inc.php
+L05code04.txt - addproduct.inc.php  (listed as addproducts in chap 3)
+L05code05.txt - getThumb.php
+

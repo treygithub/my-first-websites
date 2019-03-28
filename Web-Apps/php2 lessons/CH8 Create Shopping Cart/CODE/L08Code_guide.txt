@@ -1,0 +1,12 @@
+
+
+Lesson 8
+--------
+L08code01.txt - buyproducts.inc.php
+L08code02.txt - updatecart.inc.php
+L08code03.txt - addtocart.inc.php
+L08code04.txt - reviewcart.inc.php
+L08code05.txt - updateitem.inc.php
+L08code06.txt - changeitem.inc.php
+
+

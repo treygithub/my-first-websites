@@ -1,0 +1,72 @@
+body {
+        background-color: gray;
+    }
+
+    p {
+        text-indent: 25px;
+    }
+
+    .poop {
+        text-align: center;
+        margin-left: 270px;
+        margin-right: 270px;
+    }
+
+    .biop1 {
+        text-align: left;
+        margin-left: 270px;
+        margin-right: 270px;
+    }
+
+    .biop2 {
+        text-align: left;
+        margin-left: 270px;
+        margin-right: 270px;
+    }
+
+    .biop3 {
+        text-align: left;
+        margin-left: 270px;
+        margin-right: 270px;
+    }
+
+    #pimp {
+        border: solid 5px;
+        margin-bottom: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    h1 {
+        color: red;
+        text-align: center;
+        font-size: 12em;
+    }
+
+    table {
+        color: red;
+        width: 50%;
+    }
+
+    .quote1 {
+        font-family: times-new-roman;
+        text-align: right;
+        margin-right: 10em;
+    }
+
+    h3 {
+        font-family: new-times-roman;
+        text-align: center;
+        border: solid 5px;
+        margin-left: 270px;
+        margin-right: 270px;
+    }
+
+    .black {
+        color: black;
+    }
+
+    #showcase {
+        margine-top: 60px;
+        margin-bottom: 60px;
+    }

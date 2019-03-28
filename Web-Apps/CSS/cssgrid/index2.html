@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Grid</title>
+    <style>
+    .wrapper{
+      display:grid;
+      /*grid-template-columns: 1fr 1fr 1fr;*/
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap:1em;
+      /*grid-auto-rows: 100px;*/
+      grid-auto-rows: minmax(100px, auto);
+    }
+
+    .nested{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 70px;
+      grid-gap: 1em;
+
+    }
+
+    .wrapper > div{
+      background: #eee;
+      padding: 1em;
+    }
+    .wrapper > div:nth-child(odd){
+      background:#ddd;
+    }
+    .nested > div{
+      border:#333 1px solid;
+      padding: 1em;
+
+    }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div>
+        Example text only bubba gump shrimp..
+      </div>
+      <div>
+        Eample text only bubba gump shrimp. Eample text only bubba gump shrimp.Eample text only bubba gump shrimp.Eample text only bubba gump shrimp.Eample text only bubba gump shrimp.Eample text only bubba gump shrimp.Eample text only bubba gump shrimp.Eample text only bubba gump shrimp.
+      </div>
+      <div class="nested">
+        <div>Pimp Juice</div>
+        <div>Pimp Juice</div>
+        <div>Pimp Juice</div>
+        <div>Pimp Juice</div>
+        <div>Pimp Juice</div>
+        <div>Pimp Juice</div>
+      </div>
+      <div>
+        Example text only bubba gump shrimp..
+      </div>
+      <div>
+        Example text only bubba gump shrimp.
+      </div>
+      <div>
+        Example text only bubba gump shrimp..
+      </div>
+      <div>
+        Example text only bubba gump shrimp.
+      </div>
+    </div>
+  </body>
+</html>

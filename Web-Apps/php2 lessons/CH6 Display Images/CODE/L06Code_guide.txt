@@ -1,0 +1,11 @@
+
+
+Lesson 6
+--------
+L06code01.txt - showimage.php
+L06code02.txt - imagetest.php (not part of the application)
+L06code03.txt - editproducts.inc.php
+L06code04.txt - showproducts.php
+L06code05.txt - updateproduct.inc.php
+L06code06.txt - changeproduct.inc.php
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+        function substitute(){
+            var myValue = document.getElementById('myTextBox').value;
+
+            if (myValue.length == 0) {
+              alert('please enter real value in text box Bitch!');
+              return;
+            }
+            var myTitle = document.getElementById('title');
+            myTitle.innerHTML = myValue;
+        }
+    </script>
+</head>
+<body>
+    <h1 id="title">Javascript Example</h1>
+    <input type="text" id="myTextBox" />
+    <button type="submit" onclick="substitute()">Click Me please</button>
+    
+    <h2 id="hello">Love life</h2>
+</body>
+</html>

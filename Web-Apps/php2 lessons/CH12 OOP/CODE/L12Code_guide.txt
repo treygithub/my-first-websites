@@ -1,0 +1,12 @@
+
+
+Lesson 12
+---------
+L12code01.txt - example1.php
+L12code02.txt -example2.php
+L12code03.txt - Product.inc.php
+L12code04.txt - example3.php
+L12code05.txt - example4.php
+L12code06.txt - ProductDatabase.inc.php
+L12code07.txt - example5.php
+
