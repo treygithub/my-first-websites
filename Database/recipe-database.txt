@@ -1,0 +1,110 @@
+-- phpMyAdmin SQL Dump
+-- version 4.7.4
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1:3306
+-- Generation Time: Jun 14, 2018 at 12:08 PM
+-- Server version: 5.7.19-log
+-- PHP Version: 5.6.31
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `recipe`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `comments`
+--
+
+DROP TABLE IF EXISTS `comments`;
+CREATE TABLE IF NOT EXISTS `comments` (
+  `commentid` int(11) NOT NULL AUTO_INCREMENT,
+  `date` date NOT NULL,
+  `poster` varchar(15) COLLATE utf8_unicode_ci NOT NULL,
+  `recipeid` int(11) NOT NULL,
+  `comment` text COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`commentid`)
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `news`
+--
+
+DROP TABLE IF EXISTS `news`;
+CREATE TABLE IF NOT EXISTS `news` (
+  `newsid` int(11) NOT NULL AUTO_INCREMENT,
+  `date` date NOT NULL,
+  `poster` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `title` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `article` text COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`newsid`)
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `news`
+--
+
+INSERT INTO `news` (`newsid`, `date`, `poster`, `title`, `article`) VALUES
+(1, '2017-12-26', 'Trey', 'Site launch day', 'I am happy to announce that the family Hunnicutt Shea Esser Cole recipe web page is here!'),
+(2, '2018-01-02', 'Trey', 'Man in the mirrow', ' This is an example of a news article that will be posted here. Good job on creating and successful. This is an example of a news article that will be posted here. Good job on creating and successful. This is an example of a news article that will be posted here. Good job on creating and successful.'),
+(3, '2018-01-03', 'Trey', 'tits are fun to play with', 'I like them in my mouth I like them in my house, I like them in the morning I like them in the afternoon!  This is an example of a news article that will be posted here. Good job on creating and successful. This is an example of a news article that will be posted here. Good job on creating and successful. This is an example of a news article that will be posted here. Good job on creating and successful.'),
+(6, '2018-01-05', 'T Money', 'user post', 'This was a lot of fun and very agervating to try but rewarding in the end. I am happy to see this posy!');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `recipes`
+--
+
+DROP TABLE IF EXISTS `recipes`;
+CREATE TABLE IF NOT EXISTS `recipes` (
+  `recipeid` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `poster` varchar(15) COLLATE utf8_unicode_ci NOT NULL,
+  `shortdesc` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `ingredients` text COLLATE utf8_unicode_ci NOT NULL,
+  `directions` text COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`recipeid`)
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `recipes`
+--
+
+INSERT INTO `recipes` (`recipeid`, `title`, `poster`, `shortdesc`, `ingredients`, `directions`) VALUES
+(1, 'BK Sandwitch', 'MR Tee', 'A delightful sandwich to have', '1 egg\r\n2 slices bread\r\n1 slice cheese', '1.cook egg\r\n2.toast bread\r\n3.put cheese on'),
+(2, 'Chili hot dog', 'Dog Man', 'Really yummy to eat on a sunday', '1. bun\r\n1. hotdog\r\nmustard\r\nketchup\r\nrelish\r\n1. chopped onion\r\n1. can chili', '1. light grill\r\n2. while grill is heating up chop onion\r\n3. heat chili in pot on stove at medium\r\n4. grill hotdog for 2.5 min each side\r\n5. add your sides on top! \r\n6. your done');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE IF NOT EXISTS `users` (
+  `userid` char(15) COLLATE utf8_unicode_ci NOT NULL,
+  `password` char(41) COLLATE utf8_unicode_ci NOT NULL,
+  `fullname` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `email` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`userid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

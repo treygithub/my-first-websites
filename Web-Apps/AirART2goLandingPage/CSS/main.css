@@ -1,0 +1,452 @@
+                        /*Desk-Top style full screen view ports*/
+                        
+                        .container-main-pic {
+                            position: relative;
+                            text-align: center;
+                            color: white;
+                        }
+                        
+                        .centered {
+                            position: absolute;
+                            top: 60%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 100%;
+                        }
+                        
+                        .centered .main-title {
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 4.4rem;
+                        }
+                        
+                        .centered .sub-title {
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 2.9rem;
+                        }
+                        
+                        .c123 {
+                            position: absolute;
+                            top: 170%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            border: 2px solid transparent;
+                            overflow: hidden;
+                            width: 100px;
+                            height: 100px;
+                            text-align: center;
+                            font-size: 80px;
+                            border-radius: 50%;
+                            line-height: 110px;
+                        }
+                        
+                        .fa-angle-double-down {
+                            color: white;
+                            margin: 0;
+                            padding: 0em;
+                            animation: animate 3s linear infinite;
+                        }
+                        
+                        @keyframes animate {
+                            0% {
+                                transform: translateY(-50px);
+                            }
+                            25% {
+                                transform: translateY(0px);
+                            }
+                            50% {
+                                transform: translateY(0px);
+                            }
+                            100% {
+                                transform: translateY(100px);
+                            }
+                        }
+                        /* Global */
+                        
+                        .container-boxes {
+                            width: 80%;
+                            margin: auto;
+                            overflow: hidden;
+                        }
+                        /* Boxes */
+                        
+                        #boxes {
+                            margin-top: 20px;
+                        }
+                        
+                        .box h3 {
+                            color: rgb(105, 188, 236);
+                        }
+                        
+                        #boxes .box {
+                            float: left;
+                            text-align: center;
+                            width: 30%;
+                            padding: 10px;
+                            font-size: 14px;
+                            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                            line-height: 1.4;
+                            color: black;
+                        }
+                        
+                        #boxes .box img {
+                            width: 300px;
+                            margin: auto;
+                        }
+                        
+                        .container-main-pic,
+                        .parallax {
+                            /* The image used */
+                            background-image: url("/images/mainpic.jpg");
+                            /* Full height */
+                            height: 100%;
+                            /* Create the parallax scrolling effect */
+                            background-attachment: fixed;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            margin: 0%;
+                            padding: 0%;
+                        }
+                        
+                        .parallax2 {
+                            /* The image used */
+                            background-image: url("/images/mainpic2.jpg");
+                            /* Full height */
+                            height: 100%;
+                            /* Create the parallax scrolling effect */
+                            background-attachment: fixed;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            margin: 0%;
+                            padding: 0%;
+                        }
+                        
+                        .parallax3 {
+                            /* The image used */
+                            background-image: url("/images/mainpic3.jpg");
+                            /* Full height */
+                            height: 100%;
+                            /* Create the parallax scrolling effect */
+                            background-attachment: fixed;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            margin: 0%;
+                            padding: 0%;
+                        }
+                        /* CSS Document */
+                        /* First we are just defining some global styling using the body element -- font, and line height */
+                        
+                        body {
+                            font-family: Verdana, Geneva, sans-serif;
+                            margin: 0%;
+                            padding: 0%;
+                        }
+                        
+                        body,
+                        html {
+                            height: 100%;
+                            padding: 0;
+                            margin: 0%;
+                        }
+                        /* turning off underlining for links */
+                        
+                        a {
+                            text-decoration: none;
+                        }
+                        /* Indenting paragraphs so paragraph text doesn't bump into other elements */
+                        
+                        p {
+                            margin-left: 5px;
+                        }
+                        /* We are adding a bit of spacing around images */
+                        
+                        img {
+                            margin: 5px;
+                        }
+                        /* Now we begin defining the columns that will display in full-sized browser windows */
+                        
+                        article {
+                            margin: 0%;
+                        }
+                        
+                        article,
+                        #sec2 {
+                            background-color: white;
+                            color: rgb(236, 62, 62);
+                            min-height: 770px;
+                            margin-top: 0%;
+                            margin-right: auto;
+                            margin-left: auto;
+                            min-height: 600px;
+                        }
+                        
+                        section {
+                            padding: 1%;
+                            margin: 1%;
+                            min-height: 500px;
+                            float: left;
+                        }
+                        
+                        #a2 img {
+                            float: left;
+                        }
+                        
+                        #a2 {
+                            width: 44%;
+                            background-color: blue;
+                            color: white;
+                            font-size: 14px;
+                            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                            line-height: 1.4;
+                        }
+                        
+                        #b2 {
+                            width: 22%;
+                            background-color: white;
+                            color: darkgreen;
+                            font-size: 14px;
+                            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                            line-height: 1.4;
+                        }
+                        
+                        #c2 {
+                            width: 22%;
+                            background-color: red;
+                            color: white;
+                            font-size: 14px;
+                            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                            line-height: 1.4;
+                        }
+                        
+                        #sec2 .h1--article1--content {
+                            color: rgb(105, 188, 236);
+                            padding-left: 10%;
+                            padding-right: 10%;
+                            font-size: 3.5rem;
+                            margin-bottom: 0;
+                            text-align: center;
+                            margin-top: 0%;
+                        }
+                        
+                        .container-boxes .h1--article1--content-1 {
+                            color: rgb(105, 188, 236);
+                            padding-left: 1%;
+                            padding-right: 1%;
+                            font-size: 3rem;
+                            margin-bottom: 0;
+                            margin-top: 0%;
+                        }
+                        /* Newsletter */
+                        
+                        button,
+                        .button_1 {
+                            height: 38px;
+                            background: rgb(32, 149, 245);
+                            border: 0;
+                            padding-left: 20px;
+                            padding-right: 20px;
+                            font-weight: bolder;
+                            color: black;
+                            font-weight: bold;
+                            box-shadow: 1.5em 1.5em 1.5em;
+                        }
+                        
+                        button,
+                        .button_1:hover {
+                            background: rgb(82, 171, 243);
+                        }
+                        
+                        button,
+                        .button_1:-moz-placeholder {
+                            color: black;
+                            font-weight: bold;
+                        }
+                        
+                        @media (min-width:481px) and (max-width:900px) {
+                            /* hidden footer - showes on smaller view port */
+                            #boxes .box {
+                                float: none;
+                                width: 100%;
+                                text-align: center;
+                            }
+                            .c123 {
+                                position: absolute;
+                                top: 150%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                border: 2px solid transparent;
+                                overflow: hidden;
+                                width: 50px;
+                                height: 50px;
+                                text-align: center;
+                                font-size: 40px;
+                                border-radius: 50%;
+                                line-height: 130px;
+                            }
+                            .centered .main-title {
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 2.8rem;
+                            }
+                            .centered .sub-title {
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 1.9rem;
+                            }
+                            article {
+                                min-height: 600px;
+                                width: 95%;
+                            }
+                            #sec2 {
+                                min-height: 550px;
+                                /*We are defining a height of 1000px*/
+                                width: 95%;
+                                /*We are changing the width from a pixel value to a relative value to resize in different tablets*/
+                                margin-top: 0%;
+                                padding-top: 0%;
+                            }
+                            section {
+                                min-height: 320px;
+                                /*We are reducing the minimum height*/
+                            }
+                            section img {
+                                float: left;
+                                /*We are floating images in sections for a more compact tablet design*/
+                                padding: 5px;
+                            }
+                            #a2 {
+                                float: none;
+                                /*We are removing the float*/
+                                width: 94%;
+                                /*We are defining the width with a relative value */
+                            }
+                            #b2 {
+                                background-color: white;
+                                float: left;
+                                width: 45%;
+                                /*We are sizing the width to be about half the width of section a*/
+                            }
+                            #c2 {
+                                float: left;
+                                width: 45%;
+                                /*We are sizing the width to be about half the width of section a*/
+                            }
+                            #sec2 .h1--article1--content {
+                                color: rgb(105, 188, 236);
+                                padding-left: 10%;
+                                padding-right: 10%;
+                                font-size: 3rem;
+                                margin-bottom: 0;
+                                text-align: center;
+                                margin-top: 0%;
+                            }
+                            .container-boxes .h1--article1--content-1 {
+                                color: rgb(105, 188, 236);
+                                padding-left: 1%;
+                                padding-right: 1%;
+                                font-size: 2.5rem;
+                                margin-bottom: 0;
+                                margin-top: 0%;
+                            }
+                            .container-main-pic,
+                            .parallax {
+                                background-attachment: scroll;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-size: 100%;
+                                margin: 0%;
+                                padding: 0%;
+                            }
+                            .parallax2 {
+                                background-attachment: scroll;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-size: 100%;
+                                margin: 0%;
+                                padding: 0%;
+                            }
+                            .parallax3 {
+                                background-attachment: scroll;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-size: 100%;
+                                margin: 0%;
+                                padding: 0%;
+                            }
+                        }
+                        
+                        @media (max-width:480px) {
+                            .paddingtop-bottom {
+                                display: none;
+                            }
+                            #boxes .box {
+                                float: none;
+                                width: 100%;
+                                text-align: center;
+                            }
+                            article,
+                            #sec2 {
+                                /*We are allowing the device to define the width -- the <article> will fill the entire width of the device*/
+                                margin: 0px;
+                                padding: 0px;
+                                background-color: white;
+                                width: 100%;
+                            }
+                            section {
+                                min-height: 300px;
+                                /*We are removing constraints on width and reducing minimum height*/
+                            }
+                            section img {
+                                float: left;
+                                /*We are floating images in sections for a more compact smartphone design*/
+                                padding: 10px;
+                            }
+                            #a2 {
+                                float: none;
+                                /*We are removing the float*/
+                                width: 95%;
+                                /*We are defining the width with a relative value*/
+                            }
+                            #b2 {
+                                float: none;
+                                /*We are removing the float*/
+                                width: 95%;
+                                /*We are defining the width with a relative value*/
+                            }
+                            #c2 {
+                                float: none;
+                                display: none;
+                                /*We are removing the float*/
+                                width: 95%;
+                                /*We are defining the width with a relative value*/
+                            }
+                            .h1--article1--content-1 {
+                                font-size: 1rem;
+                                margin-top: 4rem;
+                                font-family: Arial, Helvetica, sans-serif;
+                            }
+                            .h1--article1--content {
+                                color: black;
+                                padding-left: 0%;
+                                padding-left: 0%;
+                                font-size: 1rem;
+                                margin-bottom: 0;
+                            }
+                            .container-main-pic,
+                            .parallax {
+                                display: none;
+                            }
+                            .parallax2 {
+                                display: none;
+                            }
+                            .parallax3 {
+                                display: none;
+                            }
+                            button,
+                            .button_1 {
+                                box-shadow: 1em 1em 1.5em;
+                            }
+                        }

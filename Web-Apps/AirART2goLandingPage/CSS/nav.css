@@ -1,0 +1,184 @@
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            
+            .Navbar {
+                background-color: whitesmoke;
+                display: flex;
+                min-height: 75PX;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                margin-bottom: 1rem;
+                font-family: sans-serif;
+                color: black;
+                min-height: 4rem;
+                border-bottom: black;
+                position: fixed;
+                width: 100%;
+                z-index: 9999;
+            }
+            
+            .Navbar__Link {
+                padding-right: 1em;
+                padding-left: 1em;
+                margin: auto;
+            }
+            
+            .Navbar__Link-brand {
+                text-align: center;
+                margin: auto;
+            }
+            
+            .Navbar__Items {
+                display: flex;
+                margin: auto;
+            }
+            
+            .Navbar__Items--right {
+                margin-left: auto;
+            }
+            
+            .Navbar__Link-toggle {
+                display: none;
+            }
+            
+            a {
+                font-size: 1.4rem;
+                padding-right: 1rem;
+                color: black;
+                text-decoration: none;
+            }
+            
+            .shop {
+                background-color: crimson;
+                padding: 4px;
+                border-radius: 15px;
+                text-decoration: none;
+                color: aliceblue;
+            }
+            
+            .shop:hover {
+                background-color: rgb(252, 57, 96);
+                text-decoration: none;
+                color: white;
+            }
+            
+            .Navbar__Link {
+                margin-left: 0rem;
+            }
+            
+            #navbar1 li {
+                font-size: 1.4rem;
+                list-style: none;
+                position: relative;
+            }
+            
+            #navbar1 a {
+                padding: 5px;
+                color: black;
+                text-decoration: none;
+            }
+            
+            #navbar1 a:hover {
+                color: rgb(133, 122, 122);
+                text-decoration: none;
+            }
+            /*Dropdown styling*/
+            
+            #navbar1 ul {
+                list-style: none;
+                position: absolute;
+                left: -9999px;
+                /*Hide off-screen when not hovered over*/
+            }
+            
+            #navbar1 ul li {
+                padding-top: 5px;
+                /*Between the li items for spacing*/
+                float: none;
+            }
+            
+            #navbar1 ul a {
+                white-space: nowrap;
+                /*Stop text wrapping*/
+            }
+            
+            #navbar1 ul a {
+                list-style: none;
+            }
+            
+            #navbar1 li:hover ul {
+                /*Display the dropdown on hover*/
+                left: 0;
+                /*Bring back on-screen when needed*/
+                z-index: 1;
+            }
+            
+            #navbar1 li:hover a {
+                /*The top link display when a user hovers over sub-menu items*/
+                text-decoration: none;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            
+            #navbar1 li:hover ul a {
+                /*The hover state defined a global style for links even before they're hovered over. Here we undo these effects.*/
+                text-decoration: none;
+            }
+            
+            #navbar1 li:hover ul li a:hover {
+                /*Defines the most explicit hover states when a user hovers over an individual link.*/
+                background-color: black;
+            }
+            /*end experiment*/
+            
+            @media only screen and (max-width: 900px) {
+                .Navbar,
+                .Navbar__Items {
+                    flex-direction: column;
+                }
+                .Navbar__Items {
+                    display: none;
+                    margin-left: 0;
+                }
+                .Navbar__Items--right {
+                    margin-left: 1.7rem;
+                }
+                .cart {
+                    margin-top: 1rem;
+                }
+                .login {
+                    margin-top: .5rem;
+                }
+                .Navbar__ToggleShow {
+                    display: flex;
+                }
+                .Navbar__Link-toggle {
+                    align-self: flex-end;
+                    display: initial;
+                    position: absolute;
+                    cursor: pointer;
+                    padding-right: 10%;
+                    margin-right: 10px;
+                    margin-bottom: 10px;
+                    padding-bottom: 15px;
+                }
+                a {
+                    border: none;
+                    font-size: 1em;
+                    padding-right: 0rem;
+                    color: black;
+                    text-decoration: none;
+                }
+                #navbar1 li {
+                    font-size: 1rem;
+                }
+            }
+            
+            @media only screen and (max-width: 480px) {
+                .Navbar {
+                    margin-top: 0;
+                    padding-right: 20px;
+                }
+            }

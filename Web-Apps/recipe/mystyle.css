@@ -1,0 +1,376 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 80%;
+    color: #333333;
+    line-height: 1.166;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    background-image: url(images/bb.jpg);
+    background-repeat: repeat;
+    background-position: -2200px;
+    display: inline-block;
+}
+
+#content {
+    height: 100%;
+}
+
+
+/*LINKS*/
+
+a {
+    color: #377dee;
+    text-decoration: none;
+}
+
+a:link {
+    color: #28abed;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0;
+    padding: 4px;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #015b88;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #377dee;
+    text-decoration: underline;
+}
+
+
+/* I did the h1-h6 first and then started changing adding class and id later so, some of this is stilling be applyed and some is being controled by other classes or ids...*/
+
+h1 {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 120%;
+    color: royalblue;
+    margin: 0px;
+    padding: 0px;
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    font-size: 120%;
+    color: steelblue;
+    margin: 0px;
+    padding: 0px;
+}
+
+h3 {
+    font-family: Arial, sans-serif;
+    font-size: 110%;
+    color: steelblue;
+    margin: 0px;
+    padding: 0px;
+}
+
+h4 {
+    font-family: Arial, sans-serif;
+    font-size: 100%;
+    color: steelblue;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* header.inc.php */
+
+#header {
+    padding: 0px;
+    border-bottom: 1px solid #E2EAEF;
+    height: 90px;
+    width: 100%;
+    background-image: url(images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    margin: 0;
+    background-color: white;
+}
+
+
+/* header.inc.php Main Header*/
+
+#head {
+    text-align: left;
+    margin-left: 45px;
+    color: #F96;
+    font-size: 24px;
+}
+
+
+/* header.inc.php sub Header*/
+
+#morehead {
+    text-align: left;
+    margin-left: 55px;
+    font-size: 18px;
+}
+
+#nav {
+    padding: 0px;
+    border: 1px solid orange;
+    background-color: #FFE3AA;
+    float: left;
+    width: 15%;
+    min-height: 500px;
+    max-height: 500px;
+}
+
+.navwelcome {
+    color: #F96;
+    font-size: 25px;
+}
+
+#main {
+    margin-left: 30px;
+    padding-right: 10px;
+    float: left;
+    border: 1px solid orange;
+    background-color: #f3f6f8;
+    width: 60%;
+    padding-bottom: 30px;
+    min-height: 500px;
+    max-height: 500px;
+    overflow: scroll;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#m11 {
+    max-width: 90%;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/*main header on main.inc.php*/
+
+#mh {
+    color: #F96;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* News.inc.php */
+
+#news {
+    padding-left: 5px;
+    border: 1px solid orange;
+    background-color: #f3f6f8;
+    float: right;
+    width: 20%;
+    min-height: 500px;
+    max-height: 500px;
+    overflow: scroll;
+}
+
+
+/* main header in news.inc.php */
+
+.shownews {
+    color: #F96;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+/* main header in shownews.inc.php */
+
+#shownews {
+    font-size: 25px;
+    color: royalblue;
+}
+
+
+/* sub header in news.inc.php */
+
+#subh {
+    color: steelblue;
+    font-size: medium;
+    text-align: center;
+}
+
+#search {
+    max-width: 50%;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#h11 {
+    color: #F96;
+    font-size: 25px;
+    text-align: center;
+}
+
+#footer {
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #E2EAEF;
+    width: 100%;
+    height: 90px;
+    background-image: url(images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-color: #F9F9F9;
+    display: inline-block;
+    clear: both;
+}
+
+
+/*  All form fields */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+.container {
+    max-width: 80%;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.contact input[type="password"],
+.contact input[type="text"],
+.contact input[type="email"],
+.contact input[type="tel"],
+.contact input[type="url"],
+.contact textarea,
+.contact button[type="submit"] {
+    font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.contact {
+    background: #F9F9F9;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+.contact h3 {
+    color: #F96;
+    display: block;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.contact h4 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 10px 0 0;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+.contact input[type="password"],
+.contact input[type="text"],
+.contact input[type="email"],
+.contact input[type="tel"],
+.contact input[type="url"],
+.contact textarea {
+    width: 100%;
+    border-style: inset;
+    border-width: 3px;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+.contact input[type="password"]:hover,
+.contact input[type="text"]:hover,
+.contact input[type="email"]:hover,
+.contact input[type="tel"]:hover,
+.contact input[type="url"]:hover,
+.contact textarea:hover {
+    border: 3px inset rgb(128, 129, 129);
+    -webkit-transition: border-color 0.5s ease-in-out;
+    -moz-transition: border-color 0.5s ease-in-out;
+    transition: border-color 0.5s ease-in-out;
+}
+
+.contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+.contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #0CF;
+    color: #FFF;
+    margin: 0 0 5px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.contact button[type="submit"]:hover {
+    background: #09C;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    -moz-transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact button[type="submit"]:active {
+    box-shadow: inset 0 3px 2px rgba(206, 203, 203, 0.5);
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    outline: 0;
+    border: 3px inset #999;
+}
+
+::-webkit-input-placeholder {
+    color: #888;
+}
+
+:-moz-placeholder {
+    color: #888;
+}
+
+::-moz-placeholder {
+    color: #888;
+}
+
+:-ms-input-placeholder {
+    color: #888;
+}

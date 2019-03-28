@@ -1,0 +1,291 @@
+/*Desk-Top View-Ports Media~Query Styling*/
+
+@media (min-width: 501px) {
+    header {
+        padding: 0px;
+        border-bottom: 1px solid #E2EAEF;
+        height: 90px;
+        width: 100%;
+        background-image: url(../images/ok.jpg);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-position-y: -4em;
+        margin: 0;
+        background-color: white;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        font-family: Arial, sans-serif;
+        font-size: 1rem;
+        color: #333333;
+        line-height: 1.166;
+        margin: 0px;
+        padding: 0px;
+    }
+    /* Start Sections */
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+    nav {
+        flex-basis: 15%;
+    }
+    section {
+        flex-basis: 55%;
+    }
+    aside {
+        flex-basis: 30%;
+    }
+    /* End of Sections */
+    /* Titles / Header main storefront section */
+    .title {
+        font-size: 2rem;
+        margin-bottom: 1em;
+    }
+    .title2 {
+        font-size: 1.75rem;
+        margin-bottom: 1em;
+    }
+    /* All the <a> Link style */
+    a {
+        color: #006699;
+        text-decoration: none;
+    }
+    a:link {
+        color: #006699;
+        text-decoration: none;
+    }
+    a:visited {
+        color: #006699;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #006699;
+        text-decoration: underline;
+    }
+    /* End of Links */
+    /* Start Nav Section ul - li nav */
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #f1f1f1;
+        border: 1px solid #555;
+    }
+    li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+    /* Change the link color on hover */
+    li a:hover {
+        background-color: #555;
+        color: white;
+    }
+    li {
+        text-align: center;
+        border-bottom: 1px solid #555;
+    }
+    li:last-child {
+        border-bottom: none;
+    }
+    /* End Nav Section ul - li */
+    /* about us page */
+    ol li {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+        border: none;
+    }
+    .table {
+        position: relative;
+        height: 205px;
+        width: 400px;
+        margin: auto;
+        text-align: center;
+    }
+    .page-title {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.5rem;
+    }
+    #borito {
+        float: left;
+        position: relative;
+        height: 300px;
+        width: 40%;
+        margin: auto;
+    }
+    #sidebar {
+        float: left;
+        position: relative;
+        height: 300px;
+        width: 40%;
+        margin: auto;
+    }
+    /* end about us page */
+    /* all h1 - h4 */
+    h1 {
+        font-family: Verdana, Arial, sans-serif;
+        font-size: 1rem;
+        color: #334d55;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+    h2 {
+        font-family: Arial, sans-serif;
+        font-size: 1rem;
+        color: #334d55;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+    h3 {
+        font-family: Arial, sans-serif;
+        font-size: 1rem;
+        color: #334d55;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+    h4 {
+        font-family: Arial, sans-serif;
+        font-size: 1rem;
+        color: #334d55;
+        margin: 0px;
+        padding: 0px;
+    }
+    /* end of h1 - h4 */
+    /* Header section */
+    header {
+        margin: 0;
+        padding: 7px;
+        border-bottom: 1px solid #E2EAEF;
+        height: 90px;
+        width: 100%;
+    }
+    /* Header id h1 & h4 */
+    #header {
+        padding-top: .5em;
+        text-align: left;
+        font-size: 1.5rem;
+        margin-left: 2em;
+    }
+    #subheader {
+        font-size: 1rem;
+        margin-left: 4.5rem;
+    }
+    /* End of Header section */
+    #status {
+        padding: 7px;
+        border-bottom: 1px solid #E2EAEF;
+        border-top: 1px solid #E2EAEF;
+        border-left: 1px solid #E2EAEF;
+        background-color: #f3f6f8;
+        width: 30%;
+    }
+    /* Footer start section */
+    footer {
+        padding: 7px;
+        height: 90px;
+        text-align: center;
+        font-size: 1rem;
+        border-bottom: 1px solid #E2EAEF;
+        border-top: 1px solid #E2EAEF;
+        width: 100%;
+        background-image: url(../images/ok.jpg);
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        display: inline-block;
+        background-position-y: -4em;
+    }
+    /* Footer end section */
+}
+
+@media (max-width: 500px) {
+    header {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-size: 1.5rem;
+        color: black;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        /*I added a font color of black to our <h1> style.*/
+    }
+    nav {
+        background-color: white;
+        color: darkred;
+        min-height: 480px;
+        padding: 5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    li {
+        font-size: 1.5rem;
+        text-decoration: none;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    a {
+        font-size: 1.5rem;
+        text-decoration: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    ul {
+        list-style: none;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    nav li {
+        position: relative;
+        margin-left: -40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    nav a {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.25rem;
+        display: block;
+        width: 66%;
+        padding: 10px;
+        margin-bottom: 5px;
+        color: black;
+        background: rgb(228, 204, 174);
+        text-decoration: none;
+        border-radius: 5px 5px 1px 1px;
+    }
+    nav a:hover {
+        margin-left: auto;
+        margin-right: auto;
+        color: yellow;
+        text-decoration: none;
+    }
+    /* hide submenus in mobile devices */
+    nav li:hover a {
+        margin-left: auto;
+        margin-right: auto;
+        text-decoration: none;
+        background-color: gray;
+        border-radius: 5px 25px 25px 5px;
+        border-bottom: thin white solid;
+        width: 75%;
+    }
+}
+
+
+/*END MEDIA QUERY 2*/
